@@ -30,6 +30,7 @@
             neovim = pkgs.neovim-unwrapped;
             initLua = ''
               require('init')
+              require('lz.n').load('lazy')
             '';
             extraBinPath = with pkgs; [
               nodejs
@@ -81,6 +82,7 @@
                     # avoid it if possible
                     dependencies = [ ];
                   }
+                  lz-n
                   lazydev-nvim
                   blink-copilot
                   avante-nvim
@@ -142,6 +144,8 @@
                   vim-test
                 ])
                 ++ [ optimizedTreesitter ];
+              opt = [
+              ];
 
               dev.myconfig = {
                 pure = ./nvim;
