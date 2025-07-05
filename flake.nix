@@ -158,6 +158,12 @@
           };
 
           dev = self.packages.x86_64-linux.default.devMode;
+          devShells.x86_64-linux.default = pkgs.mkShellNoCC {
+            packages = [ self.packages.x86_64-linux.dev ];
+            shellHook = ''
+              echo "🧠 Neovim dev shell activated"
+            '';
+          };
         };
     };
 }
