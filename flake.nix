@@ -155,10 +155,10 @@
 
             dev.myconfig = {
               pure = ./nvim;
-              impure =
-                # This is a hack it should be a absolute path
-                # here it'll only work from this directory
-                "/' .. vim.uv.cwd()  .. '/nvim";
+              impure = "/home/coco/nvim/nvim";
+              # This is a hack it should be a absolute path
+              # here it'll only work from this directory
+              # "/' .. vim.uv.cwd()  .. '/nvim";
             };
           };
         };
