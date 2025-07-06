@@ -11,7 +11,8 @@
       mnw,
       self,
       ...
-    }: let
+    }:
+    let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       optimizedTreesitter = pkgs.symlinkJoin {
         name = "nvim-treesitter-optimized";
@@ -20,7 +21,8 @@
           pkgs.vimPlugins.nvim-treesitter.withAllGrammars.dependencies
         ];
       };
-    in {
+    in
+    {
       devShells.x86_64-linux.default = pkgs.mkShellNoCC {
         packages = [ self.packages.x86_64-linux.default.devMode ];
         shellHook = ''
@@ -153,10 +155,10 @@
 
             dev.myconfig = {
               pure = ./nvim;
-              impure = "/home/coco/nvim/nvim";
-              # This is a hack it should be a absolute path
-              # here it'll only work from this directory
-              # "/' .. vim.uv.cwd()  .. '/nvim";
+              impure =
+                # This is a hack it should be a absolute path
+                # here it'll only work from this directory
+                "/' .. vim.uv.cwd()  .. '/nvim";
             };
           };
         };
