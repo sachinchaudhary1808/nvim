@@ -1,6 +1,6 @@
 -- options
 -- global option keep this at top
-require("options")
+require("config.options")
 
 -- require("coco.plugins")
 require("plugins.alpha")
@@ -29,7 +29,7 @@ require("utils.compiler")
 require("snippets.snip")
 
 -- files
-require("keymaps")
-require("auto-commands")
+require("config.keymaps")
+require("config.auto-commands")
 
-require("small")
+require("config.small")
