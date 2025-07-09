@@ -29,6 +29,7 @@
           echo "🧠 Neovim dev shell activated"
         '';
       };
+      dev = self.packages.x86_64-linux.default.devMode;
 
       packages.x86_64-linux = {
         default = mnw.lib.wrap pkgs {

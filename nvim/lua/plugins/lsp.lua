@@ -55,3 +55,9 @@ vim.lsp.enable("eslint")
 
 -- python lsp server
 vim.lsp.enable("pyright")
+
+-- haskell
+vim.lsp.config("hls", {
+    filetypes = { "haskell", "lhaskell", "cabal" },
+})
+vim.lsp.enable("hls")
