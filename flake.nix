@@ -98,7 +98,7 @@
                 lspkind-nvim
                 blink-cmp
                 nvim-ts-autotag
-                ccc-nvim
+                nvim-colorizer-lua
                 trouble-nvim
                 fidget-nvim
                 alpha-nvim

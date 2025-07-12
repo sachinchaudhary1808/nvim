@@ -6,13 +6,9 @@ require("lualine").setup({
     icons_enabled = true,
 })
 require("fidget").setup({})
-require("ccc").setup({
-    highlighter = {
-        auto_enable = true,
-        lsp = true,
-    },
-})
 
+--colorizer
+require("colorizer").setup({})
 -- Theme configuration
 require("onedark").load()
 -- vim.cmd.colorscheme("tokyonight")
