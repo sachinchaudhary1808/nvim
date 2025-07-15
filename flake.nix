@@ -91,10 +91,6 @@
                 }
                 lz-n
                 lazydev-nvim
-                blink-copilot
-                avante-nvim
-                blink-cmp-avante
-                copilot-lua
                 lspkind-nvim
                 blink-cmp
                 nvim-ts-autotag
