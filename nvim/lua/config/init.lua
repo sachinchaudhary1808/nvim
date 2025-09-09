@@ -24,6 +24,7 @@ require("plugins.telescope")
 require("plugins.debugging")
 require("plugins.vim-test")
 require("plugins.trouble")
+require("plugins.ai")
 
 require("utils.compiler")
 require("snippets.snip")

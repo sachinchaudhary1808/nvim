@@ -146,6 +146,9 @@
 
               # testing
               vim-test
+              avante-nvim
+              blink-cmp-avante
+              copilot-lua
             ]);
 
             opt = [

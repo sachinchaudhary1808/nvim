@@ -22,7 +22,15 @@ blink.setup({
     cmdline = { enabled = true },
     sources = {
         default = { "lsp", "path", "snippets", "buffer", "omni" },
-        providers = {},
+        providers = {
+            avante = {
+                module = "blink-cmp-avante",
+                name = "Avante",
+                opts = {
+                    -- options for blink-cmp-avante
+                },
+            },
+        },
     },
     signature = {
         enabled = true,
