@@ -61,3 +61,5 @@ vim.lsp.config("hls", {
     filetypes = { "haskell", "lhaskell", "cabal" },
 })
 vim.lsp.enable("hls")
+
+vim.lsp.enable("rust_analyzer")
