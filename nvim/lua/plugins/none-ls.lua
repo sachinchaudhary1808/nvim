@@ -23,7 +23,6 @@ null_ls.setup({
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.gofmt, -- for go
         null_ls.builtins.formatting.black,
-        null_ls.builtins.formatting.rustfmt,
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.formatting.alejandra,
         null_ls.builtins.formatting.clang_format,
@@ -32,7 +31,6 @@ null_ls.setup({
         null_ls.builtins.diagnostics.pylint,
         null_ls.builtins.diagnostics.deadnix,
         null_ls.builtins.diagnostics.statix,
-        null_ls.builtins.diagnostics.clippy,
 
         -- null_ls.builtins.diagnostics.revive,
     },

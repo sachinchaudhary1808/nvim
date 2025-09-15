@@ -63,3 +63,14 @@ vim.lsp.config("hls", {
 vim.lsp.enable("hls")
 
 vim.lsp.enable("rust_analyzer")
+
+vim.lsp.config("rust_analyzer", {
+    settings = {
+        ["rust-analyzer"] = {
+            -- Tell rust-analyzer to run clippy for diagnostics
+            check = {
+                command = "clippy",
+            },
+        },
+    },
+})
