@@ -1,38 +1,38 @@
 local lspconfig = require("lspconfig")
 
 local capabilities = {
-    textDocument = {
-        foldingRange = {
-            dynamicRegistration = false,
-            lineFoldingOnly = true,
-        },
-    },
+	textDocument = {
+		foldingRange = {
+			dynamicRegistration = false,
+			lineFoldingOnly = true,
+		},
+	},
 }
 
 -- Set lsp capabilities globally
 vim.lsp.config("*", {
-    capabilities = require("blink.cmp").get_lsp_capabilities(capabilities),
+	capabilities = require("blink.cmp").get_lsp_capabilities(capabilities),
 })
 
 -- Setup each LSP server individually
 vim.lsp.config("gopls", {
-    settings = {
-        gopls = {
-            analyses = {
-                unusedparams = true,
-            },
-            staticcheck = true,
-            usePlaceholders = true,
-            completeUnimported = true,
-        },
-    },
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+			usePlaceholders = true,
+			completeUnimported = true,
+		},
+	},
 })
 
 vim.lsp.enable("gopls")
 
 vim.lsp.enable("lua_ls")
 require("lazydev").setup({
-    library = { { path = "${3rd}/luv/library", words = { "vim%.uv" } } },
+	library = { { path = "${3rd}/luv/library", words = { "vim%.uv" } } },
 })
 
 vim.lsp.enable("nil_ls")
@@ -54,23 +54,22 @@ vim.lsp.enable("jsonls")
 vim.lsp.enable("eslint")
 
 -- python lsp server
-vim.lsp.enable("pyright")
+vim.lsp.enable("basedpyright")
 
 -- haskell
 vim.lsp.config("hls", {
-    filetypes = { "haskell", "lhaskell", "cabal" },
+	filetypes = { "haskell", "lhaskell", "cabal" },
 })
 vim.lsp.enable("hls")
 
-vim.lsp.enable("rust_analyzer")
-
 vim.lsp.config("rust_analyzer", {
-    settings = {
-        ["rust-analyzer"] = {
-            -- Tell rust-analyzer to run clippy for diagnostics
-            check = {
-                command = "clippy",
-            },
-        },
-    },
+	settings = {
+		["rust-analyzer"] = {
+			-- Tell rust-analyzer to run clippy for diagnostics
+			check = {
+				command = "clippy",
+			},
+		},
+	},
 })
+vim.lsp.enable("rust_analyzer")

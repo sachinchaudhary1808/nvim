@@ -5,13 +5,7 @@
     # If you're actually using this, change your input to this:
     mnw.url = "github:Gerg-L/mnw";
   };
-  outputs =
-    {
-      nixpkgs,
-      mnw,
-      self,
-      ...
-    }:
+  outputs = { nixpkgs, mnw, self, ... }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       optimizedTreesitter = pkgs.symlinkJoin {
@@ -21,8 +15,7 @@
           pkgs.vimPlugins.nvim-treesitter.withAllGrammars.dependencies
         ];
       };
-    in
-    {
+    in {
       devShells.x86_64-linux.default = pkgs.mkShellNoCC {
         packages = [ self.packages.x86_64-linux.default.devMode ];
         shellHook = ''
@@ -48,7 +41,7 @@
             rust-analyzer
             nodePackages.bash-language-server
             yaml-language-server
-            python312Packages.python-lsp-server
+            basedpyright
             marksman
             # clang-tools
 
@@ -68,10 +61,7 @@
           ];
 
           plugins = {
-            start = [
-              optimizedTreesitter
-            ]
-            ++ (with pkgs.vimPlugins; [
+            start = [ optimizedTreesitter ] ++ (with pkgs.vimPlugins; [
               {
                 # "pname" and "version"
                 # or "name" is required
@@ -101,7 +91,8 @@
               alpha-nvim
               oil-nvim
               neoformat
-              none-ls-nvim
+              # none-ls-nvim
+              conform-nvim
               auto-session
               bufferline-nvim
               dressing-nvim
@@ -146,13 +137,11 @@
 
               # testing
               vim-test
-              avante-nvim
-              blink-cmp-avante
               copilot-lua
+              supermaven-nvim
             ]);
 
-            opt = [
-            ];
+            opt = [ ];
 
             dev.myconfig = {
               pure = ./nvim;
