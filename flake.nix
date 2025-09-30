@@ -139,6 +139,7 @@
               vim-test
               copilot-lua
               supermaven-nvim
+              presence-nvim
             ]);
 
             opt = [ ];
