@@ -9,7 +9,7 @@ require("plugins.todo-comments")
 require("plugins.mini-pairs")
 require("plugins.fugitive")
 -- require("plugins.none-ls")
- require("plugins.conform")
+require("plugins.conform")
 require("plugins.treesitter")
 require("plugins.auto-session")
 require("plugins.gitsings")
@@ -28,6 +28,7 @@ require("plugins.trouble")
 require("plugins.ai")
 
 require("utils.compiler")
+require("utils.auto-theme")
 require("snippets.snip")
 
 -- files

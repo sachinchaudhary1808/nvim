@@ -80,6 +80,22 @@
                 # avoid it if possible
                 dependencies = [ ];
               }
+              {
+                name = "auto-dark-mode.nvim";
+
+                src = pkgs.fetchFromGitHub {
+                  owner = "f-person";
+                  repo = "auto-dark-mode.nvim";
+                  rev = "e300259ec777a40b4b9e3c8e6ade203e78d15881";
+                  hash = "sha256-PhhOlq4byctWJ5rLe3cifImH56vR2+k3BZGDZdQvjng=";
+                };
+
+                # Plugins can have other plugins as dependencies
+                # this is mainly used in nixpkgs
+                # avoid it if possible
+                dependencies = [ ];
+              }
+              nightfox-nvim
               lz-n
               lazydev-nvim
               lspkind-nvim

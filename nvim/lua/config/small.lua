@@ -5,7 +5,13 @@ require("ibl").setup()
 require("lualine").setup({
 	icons_enabled = true,
 })
-require("fidget").setup({})
+require("fidget").setup({
+	progress = {
+		display = {
+			progress_icon = { pattern = "dots", period = 1 },
+		},
+	},
+})
 
 --colorizer
 require("colorizer").setup({})
