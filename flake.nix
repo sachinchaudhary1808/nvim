@@ -42,7 +42,6 @@
             nodePackages.bash-language-server
             yaml-language-server
             basedpyright
-            marksman
             # clang-tools
 
             #formatters
@@ -95,6 +94,8 @@
                 # avoid it if possible
                 dependencies = [ ];
               }
+              markview-nvim
+
               nightfox-nvim
               lz-n
               lazydev-nvim

@@ -36,7 +36,6 @@ require("lazydev").setup({
 })
 
 vim.lsp.enable("nil_ls")
-vim.lsp.enable("marksman")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("yamlls")
 vim.lsp.enable("bashls")
