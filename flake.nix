@@ -56,7 +56,7 @@
             alejandra
             # statix
             deadnix
-            nil
+            nixd
           ];
 
           plugins = {

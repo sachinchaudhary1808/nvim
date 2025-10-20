@@ -35,7 +35,7 @@ require("lazydev").setup({
 	library = { { path = "${3rd}/luv/library", words = { "vim%.uv" } } },
 })
 
-vim.lsp.enable("nil_ls")
+vim.lsp.enable("nixd")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("yamlls")
 vim.lsp.enable("bashls")
