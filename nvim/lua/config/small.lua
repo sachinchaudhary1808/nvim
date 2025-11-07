@@ -16,8 +16,15 @@ require("fidget").setup({
 --colorizer
 require("colorizer").setup({})
 -- Theme configuration
-require("onedark").load()
--- vim.cmd.colorscheme("tokyonight")
+-- require("onedark").load()
+
+require("catppuccin").setup({
+	background = {
+		light = "latte",
+		dark = "mocha",
+	},
+})
+vim.cmd.colorscheme("catppuccin")
 
 -- Fix WinBar color settings
 vim.api.nvim_set_hl(0, "WinBar", {
