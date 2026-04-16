@@ -46,7 +46,7 @@
             wl-clipboard
             fd
             rust-analyzer
-            nodePackages.bash-language-server
+            bash-language-server
             yaml-language-server
             # basedpyright
             # clang-tools
