@@ -163,7 +163,6 @@
               # testing
               vim-test
               copilot-lua
-              supermaven-nvim
               cord-nvim
             ]);
 
