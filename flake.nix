@@ -163,7 +163,6 @@
               # testing
               vim-test
               copilot-lua
-              cord-nvim
             ]);
 
             opt = [ ];
