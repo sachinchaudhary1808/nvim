@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-25.11";
     # mnw.url = "../../.";
     # If you're actually using this, change your input to this:
     mnw.url = "github:Gerg-L/mnw";
@@ -169,7 +169,7 @@
 
             opt = [ ];
 
-            dev.myconfig = {
+            dev.config = {
               pure = ./nvim;
               impure =
                 # This is a hack it should be a absolute path
