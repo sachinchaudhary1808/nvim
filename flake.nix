@@ -105,8 +105,6 @@
                 dependencies = [ ];
               }
               markview-nvim
-
-              nightfox-nvim
               lz-n
               lazydev-nvim
               lspkind-nvim
@@ -139,7 +137,6 @@
               dracula-nvim
               # onedark-nvim
               plenary-nvim
-              tokyonight-nvim
               catppuccin-nvim
               # neodev-nvim
               luasnip
@@ -154,15 +151,12 @@
               vim-fugitive
               harpoon2
               rainbow-delimiters-nvim
-
               # debugging
               nvim-dap
               nvim-dap-python
               nvim-dap-ui
-
               # testing
               vim-test
-              copilot-lua
             ]);
 
             opt = [ ];
