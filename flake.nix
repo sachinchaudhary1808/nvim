@@ -123,7 +123,6 @@
               auto-session
               dressing-nvim
               indent-blankline-nvim
-              neocord
               nvim-treesitter-context
               lualine-nvim
               mini-pairs
@@ -165,7 +164,7 @@
               vim-test
               copilot-lua
               supermaven-nvim
-              presence-nvim
+              cord-nvim
             ]);
 
             opt = [ ];

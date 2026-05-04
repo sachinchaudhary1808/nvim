@@ -44,3 +44,7 @@ vim.cmd.colorscheme("catppuccin")
 require("direnv").setup({
 	autoload_direnv = true,
 })
+
+require("cord").setup({
+	-- ...
+})
