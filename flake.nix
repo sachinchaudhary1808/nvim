@@ -163,10 +163,10 @@
 
             dev.config = {
               pure = ./nvim;
-              impure = "~/Projects/nvim-flake";
-              # This is a hack it should be a absolute path
+              impure = 
+	      # This is a hack it should be a absolute path
               # here it'll only work from this directory
-              # "/' .. vim.uv.cwd()  .. '/nvim";
+              "/' .. vim.uv.cwd()  .. '/nvim";
             };
           };
         };
