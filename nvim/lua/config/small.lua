@@ -24,7 +24,7 @@ require("colorizer").setup({})
 require("catppuccin").setup({
 	background = {
 		light = "latte",
-		dark = "macchiato",
+		dark = "mocha",
 	},
 })
 vim.cmd.colorscheme("catppuccin")
