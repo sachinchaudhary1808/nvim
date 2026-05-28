@@ -48,3 +48,7 @@ require("direnv").setup({
 -- require("cord").setup({
 -- 	-- ...
 -- })
+--
+--
+--
+require("precognition").toggle()
