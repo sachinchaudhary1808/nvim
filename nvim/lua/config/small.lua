@@ -51,4 +51,3 @@ require("direnv").setup({
 --
 --
 --
-require("precognition").toggle()

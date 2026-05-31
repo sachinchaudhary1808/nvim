@@ -143,7 +143,6 @@
               nvim-dap-ui
               # testing
               vim-test
-              precognition-nvim
             ]);
 
             opt = [ ];
