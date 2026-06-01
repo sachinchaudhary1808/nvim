@@ -15,7 +15,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("n", "<leader>=", "<cmd>Neoformat<CR>", { desc = "manual formatting" }) --  manual code formatting
 
 -- file-tree
-keymap.set("n", "<leader>fe", "<cmd>Ex<CR>", { desc = "netrw" })
+keymap.set("n", "-", "<CMD>Oil<CR>")
 
 -- visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

@@ -25,6 +25,7 @@ require("plugins.debugging")
 require("plugins.vim-test")
 require("plugins.trouble")
 require("plugins.ai")
+require("plugins.oil")
 
 require("utils.compiler")
 require("utils.auto-theme")
