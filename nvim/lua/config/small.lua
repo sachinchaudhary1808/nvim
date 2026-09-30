@@ -22,6 +22,7 @@ require("colorizer").setup({})
 -- require("onedark").load()
 
 require("catppuccin").setup({
+	transparent_background = true,
 	background = {
 		light = "latte",
 		dark = "mocha",

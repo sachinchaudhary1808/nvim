@@ -47,6 +47,7 @@
             fd
             rust-analyzer
             bash-language-server
+            shellcheck
             yaml-language-server
             # basedpyright
             # clang-tools

@@ -62,7 +62,7 @@ local language_configs = {
 		needs_compilation = false,
 		get_command = function()
 			return {
-				run = "chmod +x % && ./%",
+				run = "bash ./%",
 			}
 		end,
 	},
